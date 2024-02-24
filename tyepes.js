@@ -1,0 +1,22 @@
+'use strict';
+var a = "5";
+var b = 5;
+var c = true;
+var d;
+var e = [1, 2, 3];
+var f = [1, 2, 3];
+var g = [1, "1"];
+var h = ["1", 1, true];
+var paymentCrid = 0;
+var havaleEft = 1;
+var eftPayment = 2;
+var Peyment;
+(function (Peyment) {
+    Peyment[Peyment["paymentCrid"] = 0] = "paymentCrid";
+    Peyment[Peyment["havaleEft"] = 1] = "havaleEft";
+    Peyment[Peyment["eftPayment"] = 2] = "eftPayment";
+})(Peyment || (Peyment = {}));
+;
+var kredi = Peyment.paymentCrid;
+var havale = Peyment.havaleEft;
+var Eft = Peyment.havaleEft;
