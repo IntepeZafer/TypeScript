@@ -1,6 +1,7 @@
 'use strict';
 var Taxi = /** @class */ (function () {
     function Taxi(location) {
+        this.location = location;
         this.getLocation = location;
     }
     Taxi.prototype.travelTo = function (Point) {
